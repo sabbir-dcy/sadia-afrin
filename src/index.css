@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  -webkit-tap-highlight-color: transparent;
+}
+input::placeholder,
+textarea::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgb(49, 49, 49);
+  opacity: 1; /* Firefox */
+  font-weight: 400;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: rgb(49, 49, 49);
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: rgb(49, 49, 49);
+}
+
+textarea {
+  resize: none;
+}
