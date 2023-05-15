@@ -14,19 +14,13 @@ const Hero = () => {
   const tl = gsap.timeline();
 
   useLayoutEffect(() => {
-
-    tl.to(quoteConRef.current, {
-      yPercent: -100,
-      duration: 1.5,
-      ease: "power4.out",
-      delay: 3,
-
-    }).from(textRef.current, {
+    tl.from(textRef.current, {
       y: 135,
       skewY: 7,
       duration: 1.5,
       ease: "power4.out",
       stagger: 0.2,
+      delay: 4.5
     }).from(nameTitleRef.current, {
       opacity: 0,
       duration: 1.5,
@@ -51,19 +45,10 @@ const Hero = () => {
 
   }, [])
 
-
-
   return (
     <>
       <section className="md:min-h-screen">
-        <div className=' w-full h-screen bg-black fixed top-0 z-10 flex items-center justify-center' ref={quoteConRef}>
-          <div className='text-white w-4/5 md:w-[25%] mx-auto'>
-            <div className='w-fit'>
-              <h2 className='text-2xl'>We don't see things as they are, we see them as we are</h2>
-              <p className='text-right mt-4'>Anaïs Nin</p>
-            </div>
-          </div>
-        </div>
+
         <div className="w-3/4 mx-auto md:mt-28">
 
           <div className="hero w-fit mx-auto leading-none">

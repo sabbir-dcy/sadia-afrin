@@ -29,17 +29,17 @@ const Connect = () => {
 
             <div className='flex flex-col gap-y-2'>
               <label htmlFor="name" className='font-medium text-lg'>Your name</label>
-              <input type="text" name='name' placeholder='John Doe' className='font-medium bg-neutral-50 outline-none h-9 p-4 rounded' required/>
+              <input type="text" name='name' placeholder='John Doe' className='font-medium bg-neutral-50 outline-none h-9 p-4 rounded' required />
             </div>
 
             <div className='flex flex-col gap-y-2'>
               <label htmlFor="email" className='font-medium text-lg'>Your email</label>
-              <input type="email" name='email' placeholder='johndoe@gmail.com' className='font-medium bg-neutral-50 outline-none h-9 rounded p-4' required/>
+              <input type="email" name='email' placeholder='johndoe@gmail.com' className='font-medium bg-neutral-50 outline-none h-9 rounded p-4' required />
             </div>
 
             <div className='flex flex-col gap-y-2'>
               <label htmlFor="subject" className='font-medium text-lg'>Subject</label>
-              <input type="text" name='subject' placeholder='message subject' className='font-medium bg-neutral-50 outline-none h-9 rounded p-4' required/>
+              <input type="text" name='subject' placeholder='fulltime job' className='font-medium bg-neutral-50 outline-none h-9 rounded p-4' required />
             </div>
           </div>
 
