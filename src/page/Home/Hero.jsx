@@ -19,7 +19,7 @@ const Hero = () => {
       yPercent: -100,
       duration: 1.5,
       ease: "power4.out",
-      delay: 1,
+      delay: 3,
 
     }).from(textRef.current, {
       y: 135,
@@ -39,13 +39,13 @@ const Hero = () => {
       {
         xPercent: 100,
         duration: 3,
-        delay: 3,
+        delay: 5.5,
         ease: "power4.out",
       })
     gsap.fromTo(dpRef.current[1],
       { opacity: 0 },
       {
-        delay: 3.2,
+        delay: 5.7,
         opacity: 1,
       })
 
@@ -57,12 +57,12 @@ const Hero = () => {
     <>
       <section className="md:min-h-screen">
         <div className=' w-full h-screen bg-black fixed top-0 z-10 flex items-center justify-center' ref={quoteConRef}>
-          {/* <div className='text-white w-4/5 md:w-[25%] mx-auto' ref={quoteRef}>
+          <div className='text-white w-4/5 md:w-[25%] mx-auto'>
             <div className='w-fit'>
-              <h2 className='text-2xl'>{quote.quote}</h2>
-              <p className='text-right mt-4'>{quote.author}</p>
+              <h2 className='text-2xl'>We don't see things as they are, we see them as we are</h2>
+              <p className='text-right mt-4'>Anaïs Nin</p>
             </div>
-          </div> */}
+          </div>
         </div>
         <div className="w-3/4 mx-auto md:mt-28">
 
@@ -77,9 +77,9 @@ const Hero = () => {
 
           <div className="greet mt-20">
 
-            <div className="relative overflow-hidden w-fit mx-auto">
-              <div className='absolute bg-black w-[200px] h-[200px] z-10' ref={(el) => dpRef.current[0] = el}></div>
-              <img className="dp w-[150px] h-[150px] object-cover mx-auto rounded-full bg-sub " ref={(el) => dpRef.current[1] = el} src={dp} alt="" />
+            <div className="relative overflow-hidden w-fit mx-auto rounded-full">
+              <div className='absolute bg-main w-[200px] h-[200px] z-10' ref={(el) => dpRef.current[0] = el}></div>
+              <img className="dp w-[150px] h-[150px] object-cover mx-auto bg-sub " ref={(el) => dpRef.current[1] = el} src={dp} alt="" />
             </div>
 
 

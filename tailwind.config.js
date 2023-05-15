@@ -4,12 +4,15 @@ export default {
   theme: {
     extend: {
       colors: {
-        main: "#D988FF",
+        main: "#c084fc",
         sub: "#EDE5F0",
       },
       screens: {
         md: "1126px",
       },
+    },
+    fontFamily: {
+      sans: ["Urbanist"],
     },
   },
   plugins: [],

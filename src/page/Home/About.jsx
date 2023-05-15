@@ -43,10 +43,10 @@ const About = () => {
 
 
   return (
-    <section className="md:h-[140vh] about " ref={aboutRef}>
+    <section className="md:h-[180vh] about " ref={aboutRef}>
       <div className="md:w-1/2 w-4/5 mx-auto relative" ref={containerRef}>
-        <div className="md:absolute -left-1/4 font-semibold md:top-1/2 md:-translate-y-1/2 mb-10 md:mb-0">ABOUT</div>
-        <div className="absolute h-full w-1 bg-main -left-6"></div>
+        <div className="md:absolute -left-1/4 font-semibold md:top-1/2 md:-translate-y-1/2 mb-10 md:mb-0 ">ABOUT</div>
+        <div className="absolute h-full top-0 w-1 bg-main -left-6"></div>
         <div>
           <h2 className="md:text-3xl text-2xl font-medium">Sadia Afrin</h2>
           <p>English content developer at 10 minute school</p>

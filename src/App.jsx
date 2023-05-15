@@ -1,5 +1,5 @@
 import { Lenis as ReactLenis, useLenis } from '@studio-freight/react-lenis'
-import './App.css'
+
 import Home from './page/Home/Home'
 import Navbar from './components/Navbar'
 import { Toaster } from 'react-hot-toast'
